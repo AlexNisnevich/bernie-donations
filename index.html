@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="lib/jvectormap/jquery-jvectormap.css">
   <link rel="stylesheet" href="lib/bootstrap.min.css">
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400italic,400' rel='stylesheet' type='text/css'>  
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/data.js"></script>
@@ -25,7 +26,21 @@
 <body id="home">
   <h1>The Impact of Donations to Bernie Sanders</h1>
 
-  <p>blah blah blah numbers</p>
+  <p>[Intro]</p>
+
+  <p class="eqn">ad impact = (# voters reached) × (% minds changed)</p>
+
+  <p>Estimating the number of primary voters reached by each dollar spent on advertising is actually pretty straightforward. All we need is to figure out the CPM (cost per thousand views) for TV commercials and multiply by what percentage of those viewers are Democratic primary voters:</p>
+
+  <p class="eqn">(# voters reached /$) = (1000 /CPM) × (% Democratic primary turnout)</p>
+
+  <p>We can use the findings of <em>Media Dynamics.</em></p>
+
+  <p class="img">
+    <img src="images/cpm-for-internet-video-and-tv-commercials.jpg" width="50%" />
+  </p>
+
+  <p class="eqn">(# voters reached /$) ≈ (1000 /10) × 8.6% × 1.5 multiplier ≈ <strong>13 voters /$</strong></p>
 
   <div id="mapArea">
     <div id="map"></div>

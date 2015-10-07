@@ -37,10 +37,11 @@ function initMap() {
   map = new jvm.Map({
     map: 'us_lcc',
     container: $("#map"),
+    backgroundColor: 'white',
     series: {
       regions: [{
         values: deltas,
-        scale: ['#FF0000', '#EE0000', '#FFFFFF', '#00EE00', '#00FF00'],
+        scale: ['#FF0000', '#EEEEEE', '#00FF00'],
         min: -100,
         max: 100
       }]
@@ -67,7 +68,7 @@ function update() {
   $('.jvectormap-tip').html(mapTooltip());
 
   // Update sidebar
-  
+
   if (total_delegates_delta() > 0) {
     $('#totalDelegateDelta').html("<span class='winning'>Bernie +" + total_delegates_delta() + "</span>");
   } else {
