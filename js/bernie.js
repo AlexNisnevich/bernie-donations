@@ -41,7 +41,7 @@ function initMap() {
     series: {
       regions: [{
         values: deltas,
-        scale: ['#FF0000', '#EEEEEE', '#00FF00'],
+        scale: ['#FF0000', '#EE0000', '#EEEEEE', '#00EE00', '#00FF00'],
         min: -100,
         max: 100
       }]
