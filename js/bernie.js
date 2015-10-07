@@ -98,7 +98,7 @@ function mapTooltip() {
 }
 
 function payForAdCampaign(state, amount) {
-  var viewers_reached = amount * 1000/10 * 2;
+  var viewers_reached = amount * 1000/10 * 1.5;
   var fraction_of_state_reached = viewers_reached / data.population[state];
   var pct_of_state_swayed = fraction_of_state_reached * 0.025 * 100;
 
