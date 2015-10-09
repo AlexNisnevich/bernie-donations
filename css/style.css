@@ -147,6 +147,13 @@ ol li {
     margin-bottom: 0.4em;
 }
 
+.progress {
+    font-family: "Lato", sans-serif;
+    margin: 0 auto; 
+    margin-top: 1.2em; 
+    width: 80%;
+}
+
 /*------------------------------------*\
     MAP
 \*------------------------------------*/

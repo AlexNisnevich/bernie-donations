@@ -85,7 +85,7 @@
 
   <p>or roughly <strong>1 extra vote per $3</strong> spent on advertising.</p>
 
-  <p>To illustrate this, here's a little simulation I put together. Right now, the map represents my best estimate<sup data-for="map-numbers"></sup> of Bernie's current poll numbers relative to Hillary's<sup data-for="two-parties"></sup> in each state<sup data-for="territories"></sup>. Clicking on a state simulates the effects of spending $50,000 on an ad campaign in that state. How much money does it take you to make Bernie win?</p>
+  <p>To illustrate this, here's a little simulation I put together. Right now, the map represents my best estimate<sup data-for="map-numbers"></sup> of Bernie's current poll numbers relative to Hillary's<sup data-for="two-parties"></sup> in each state<sup data-for="territories"></sup>. Clicking on a state simulates the effects of spending $50,000 on an ad campaign in that state<sup data-for="caveat"></sup>. How much money does it take you to make Bernie win?</p>
 
   <div id="mapArea">
     <div id="map"></div>
@@ -98,9 +98,34 @@
     </div>
   </div>
 
-  <p>[[blah blah blah $20m to be competitive (but doesn’t take into account Hillary spending – let’s assume – completely arbitrarily – that 1 in 3 people convinced by Bernie are convinced for good, regardless of other ads. So we can multiply the number by 3 to ignore Hillary spending) Also assume 25% of donations are used for logistics, so total money needed is $20m * 3 / 0.75 = <strong>80m</strong>]]</p>
+  <p>Your mileage may vary, but the sweet spot seems to be about $20,000,000 to break even.</p>
 
-  <p>blah blah blah donate</p>
+  <p>Of course, there are a lot of factors this simulation doesn't take into account. For starters, voters' perceptions are influenced by much, much more than just advertising<sup data-for="other-modes"></sup>. There's no way we can predict all the myriad of factors that affect voters, but based on how effective Bernie's rallies and stump speeches have been compared to Hillary's so far, let's be generous and say that his natural appeal to voters will do about as much for his numbers as his campaign ads will do. In that case, he'll need to spend only $10,000,000 on ads<sup data-for="handwavey"></sup>.
+
+  <p>But now we run into the big catch: Hillary will have her own campaign ads, which we can expect to be just as effective. If we model this as a money race, Bernie probably wouldn't stand much of a chance, despite his impressive fundraising last quarter. Let's do it a little differently. Let's say that, of the voters whose minds are changed by Bernie's ads and campaigning, about a quarter become “true believers” – they're convinced for good, and no amount of campaigning or attack ads can change their minds. Under this model, as long as Bernie can spend $40,000,000 on ads, he'll have a strong enough group of uncorruptable voters to win.</p>
+
+  <p>Assuming that about a third of the money Bernie raises has to go towards administrative costs – staff salaries, travel expenses, etc. – this means that he needs to get to <strong>$80 million</strong> from now until the end of the primaries.</p>
+
+  <p><em>How confident am I in the $80 million number? Not very. But it seems as good as any, given how much uncertainty we're dealing with in the primaries as a whole.</em></p>
+
+  <p>So, can Bernie do it? He currently has about <a href="https://www.washingtonpost.com/politics/heading-into-primaries-sanders-raises-24-million-in-3rd-quarter/2015/09/30/ef061a36-67ac-11e5-8325-a42b5a459b1e_story.html">$25 million on hand</a>, and given the $26 million he raised last quarter, this goal is certainly within reach.</p>
+
+  <p>And, not to be cheesy, but you can help.</p>
+
+  <p>
+    <div class="progress">
+      <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+      aria-valuenow="31" aria-valuemin="0" aria-valuemax="100" style="width:31%">
+        31% ($25M raised of $80M)
+      </div>
+    </div>
+  </p>
+
+  <p class="img">
+    <a href="https://secure.actblue.com/contribute/page/reddit-for-bernie" target=_blank>
+      <img src="images/contribute.png" width="200px" />
+    </a>
+  </p>
 
   <h3>Footnotes</h3>
 
@@ -108,10 +133,13 @@
     <li data-footnote="republicans">It’s not inconceivable that large numbers of Republicans <a href="http://www.cnn.com/2015/10/08/politics/bernie-sanders-republican-support/" target=_blank>may support Bernie</a> in open primaries, but let’s assume that this won’t be a big factor.</li>
     <li data-footnote="studies"><a href="https://scholar.google.com/scholar?q=impact+of+political+ads" target=_blank>Some examples</a>.</li>
     <li data-footnote="a-priori">We can’t get a rigorous estimate without knowing the <em>a priori</em> distribution of voter preferences, anyway.</li>
-    <li data-footnote="map-numbers">For each state's poll number, I took the difference between Bernie and Hillary's results in the latest poll (as of 10/7) conducted in that state. If the latest poll did not include Bernie (i.e. it was pre-March), I took the difference between Hillary and the second-place challenger. If the state has had no polling done in this election season yet, I defaulted to the latest national results on <a href="http://elections.huffingtonpost.com/pollster/2016-national-democratic-primary" target=_blank>HuffPost Pollster</a> (Hillary +17.7%).<sup data-for="map-numbers2"></sup></li>
+    <li data-footnote="map-numbers">For each state's poll number, I took the difference between Bernie and Hillary's results in the <a href="https://en.wikipedia.org/wiki/Statewide_opinion_polling_for_the_Democratic_Party_presidential_primaries,_2016" target=_blank>latest poll</a> (as of 10/7) conducted in that state. If the latest poll did not include Bernie (i.e. it was pre-March), I took the difference between Hillary and the second-place challenger. If the state has had no polling done in this election season yet, I defaulted to the latest national results on <a href="http://elections.huffingtonpost.com/pollster/2016-national-democratic-primary" target=_blank>HuffPost Pollster</a> (Hillary +17.7%).<sup data-for="map-numbers2"></sup></li>
     <li data-footnote="map-numbers2">I acknowledge two major flaws with this approach. For one, most states’ latest polls are many months old and thus fail to account for Bernie's recent surge. On the other hand, many recent polls include Joe Biden as an option, perhaps artificially reducing Hillary's numbers. Let's just pretend that these two effects will roughly cancel each other out.</li>
     <li data-footnote="two-parties">I'm making the assumption that the two leading candidates will be Bernie and Hillary, but other candidates will certainly receive some delegates as well, so all delegate counts on the map are <em>relative</em> (Bernie vs Hillary) rather than absolute counts.</li>
     <li data-footnote="territories">This map doesn't take into account delegates from territories, delegates from Democrats abroad, and (perhaps most importantly) unpledged “superdelegates”. For the sake of simplicity, let's assume that they are all allocated proportionally to how the pledged delegates from states are allocated.</li>
+    <li data-footnote="other-modes">And for that matter, there are many platforms for political ads aside from TV, but we can assume that they all have roughly similar cost-effectiveness.</li>
+    <li data-footnote="handwavey">Be warned, it's all very handwavy from here on out. There's not really any reasonable way to model the things I discuss here, so I'm relying on my gut more than usual.</li>
+    <li data-footnote="caveat">Another caveat to add to the long list of caveats: this map doesn't do a good job of demonstrating just how important the early primaries are. Realistically, states like Iowa offer much, much higher rewards than just their delegates – candidates' performance in early primaries does a lot to shape public perception of them. But this also means that the airwaves in these states are much more hotly contested.</li>
   </ol>
 </body>
 </html>
