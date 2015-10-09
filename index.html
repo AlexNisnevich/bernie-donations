@@ -15,36 +15,54 @@
 
   <link rel="stylesheet" href="lib/jvectormap/jquery-jvectormap.css">
   <link rel="stylesheet" href="lib/bootstrap.min.css">
+
   <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400italic,400' rel='stylesheet' type='text/css'>  
+
   <link rel="stylesheet" href="css/style.css">
 
   <script src="js/data.js"></script>
   <script src="js/bernie.js"></script>
+
+  <base target="_blank">
 </head>
 
 <body id="home">
   <h1>The Impact of Donations to Bernie Sanders</h1>
 
-  <p>[Intro]</p>
+  <p>I like Bernie Sanders. I've never donated to a political campaign before, but I've felt inspired to donate to his. But it made me wonder: where exactly does the money I donate to him go? And how much more does he need to be a viable candidate?</p>
+
+  <p>Neither is an easy question to answer. The path that political contributions take is a <a href="http://www.propublica.org/special/a-tangled-web">complicated one</a>. But we can assume that, aside from administrative costs, the main expense for the Sanders campaign will be advertising, and TV advertising in particular.</p>
+
+  <p>The goal of campaign advertising is to sway potential voters. Let's try to estimate how cost-effective political ads are at doing that. Two factors are at play when we think about the impact of an ad - the number of voters that the ad reaches and what fraction of them change their minds as a result:</p>
 
   <p class="eqn">ad impact = (# voters reached) × (% minds changed)</p>
+
+  <h2>Step One: Reach Voters</h2>
 
   <p>Estimating the number of primary voters reached by each dollar spent on advertising is actually pretty straightforward. All we need is to figure out the CPM (cost per thousand views) for TV commercials and multiply by what percentage of those viewers are Democratic primary voters:</p>
 
   <p class="eqn">(# voters reached /$) = (1000 /CPM) × (% Democratic primary turnout)</p>
 
-  <p>We can use the findings of <em>Media Dynamics.</em></p>
+  <p>According to <em>Media Dynamics</em>, an advertising analyst firm, it seems that TV ads have about a CPM of $10 on average - that is, they reach a thousand viewers for every $10 spent:</p>
 
   <p class="img">
     <img src="images/cpm-for-internet-video-and-tv-commercials.jpg" width="50%" />
   </p>
 
-  <p>blah blah blah</p>
+  <p>And voter turnout in the last presidential primaries in 2012 was <a href="http://bipartisanpolicy.org/library/national-primary-turnout-hits-new-record-low/">an abysmal 17.3%</a>, so we can estimate about half of that - say, 8.6% - for Democratic primary turnout specifically [let's ignore potential Republican voters who could support Bernie].</p>
 
-  <p class="eqn">(# voters reached /$) ≈ (1000 /10) × 8.6% × 1.5 multiplier ≈ <strong>13 voters /$</strong></p>
+  <p>But surely there is some targeting going on with political ads - for example, you wouldn't air an ad during a show whose primary demographic is children or teens. So let's add a small multiplier of ×1.5 to reflect the fact that the viewers of these ads are <em>slightly</em> more likely than the average TV American to be voters.</p>
 
-  <p>blah blah blah</p>
+  <p>With this in mind, we can estimate the cost to reach each voter:</p>
+
+  <p class="eqn">(# voters reached /$) ≈ (1000 /10) × 8.6% × 1.5 ≈ <strong>13 voters /$</strong></p>
+
+  <h2>Step Two: Change Minds</h2>
+
+  <p>An average voter has just seen an ad for Bernie Sanders. What impact will this ad have?</p>
+
+  <p>While this is a popular topic of study[footnote here?], I couldn't find many hard numbers aside from those in Franz and Ridout's 2007 paper <a href="http://www.bowdoin.edu/~mfranz/final_published_FranzRidout.pdf">Does Political Advertising Persuade?</a>. Franz and Ridout try out a few different models to explain how voter behavior is affected by advertising, and the ...</p>
 
   <p class="eqn">% minds changed = (50 % medium-information voters) × (10 % avg change) × ½ = <strong>2.5 %</strong></p>
 
@@ -53,6 +71,8 @@
   <p class="eqn">(13 voters reached /$) * (0.025 extra votes /voters reached) = 0.325 votes /$</p>
 
   <p>or roughly <strong>1 extra vote per $3</strong> spent on advertising.</p>
+
+  <h2>Dollars and Votes</h2>
 
   <p>blah blah blah interactive graphic (footnote with data sources and caveats)</p>
 

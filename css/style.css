@@ -78,7 +78,6 @@ body {
 
 h1,h2,h3,h4,h5,h6,p {
    line-height: 1.25;
-   margin-bottom: 0.5em;
 }
 
 h1 { 
@@ -86,7 +85,17 @@ h1 {
     margin-bottom: 0.7em;
 }
 
-h2 { font-size: 1.5em; }
+h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 1.5em; 
+    font-weight: bold;
+    margin-bottom: 0.4em;
+    color: #666;
+}
+
+p {
+   margin-bottom: 0.6em;
+}
 
 .eqn {
     text-align: center;
@@ -95,11 +104,14 @@ h2 { font-size: 1.5em; }
 
 .img {
     text-align: center;
-    margin: 1em;
+    margin: 0.8em;
 }
 
 strong { font-weight: bold; }
 em { font-style: italic; }
+
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
 
 /*------------------------------------*\
     MAP
