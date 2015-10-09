@@ -85,7 +85,7 @@
 
   <p>or roughly <strong>1 extra vote per $3</strong> spent on advertising.</p>
 
-  <p>To illustrate this, [...]</p>
+  <p>To illustrate this, here's a little simulation I put together. Right now, the map represents my best estimate<sup data-for="map-numbers"></sup> of Bernie's current poll numbers relative to Hillary's<sup data-for="two-parties"></sup> in each state<sup data-for="territories"></sup>. Clicking on a state simulates the effects of spending $50,000 on an ad campaign in that state. How much money does it take you to make Bernie win?</p>
 
   <div id="mapArea">
     <div id="map"></div>
@@ -108,6 +108,10 @@
     <li data-footnote="republicans">It’s not inconceivable that large numbers of Republicans <a href="http://www.cnn.com/2015/10/08/politics/bernie-sanders-republican-support/" target=_blank>may support Bernie</a> in open primaries, but let’s assume that this won’t be a big factor.</li>
     <li data-footnote="studies"><a href="https://scholar.google.com/scholar?q=impact+of+political+ads" target=_blank>Some examples</a>.</li>
     <li data-footnote="a-priori">We can’t get a rigorous estimate without knowing the <em>a priori</em> distribution of voter preferences, anyway.</li>
+    <li data-footnote="map-numbers">For each state's poll number, I took the difference between Bernie and Hillary's results in the latest poll (as of 10/7) conducted in that state. If the latest poll did not include Bernie (i.e. it was pre-March), I took the difference between Hillary and the second-place challenger. If the state has had no polling done in this election season yet, I defaulted to the latest national results on <a href="http://elections.huffingtonpost.com/pollster/2016-national-democratic-primary" target=_blank>HuffPost Pollster</a> (Hillary +17.7%).<sup data-for="map-numbers2"></sup></li>
+    <li data-footnote="map-numbers2">I acknowledge two major flaws with this approach. For one, most states’ latest polls are many months old and thus fail to account for Bernie's recent surge. On the other hand, many recent polls include Joe Biden as an option, perhaps artificially reducing Hillary's numbers. Let's just pretend that these two effects will roughly cancel each other out.</li>
+    <li data-footnote="two-parties">I'm making the assumption that the two leading candidates will be Bernie and Hillary, but other candidates will certainly receive some delegates as well, so all delegate counts on the map are <em>relative</em> (Bernie vs Hillary) rather than absolute counts.</li>
+    <li data-footnote="territories">This map doesn't take into account delegates from territories, delegates from Democrats abroad, and (perhaps most importantly) unpledged “superdelegates”. For the sake of simplicity, let's assume that they are all allocated proportionally to how the pledged delegates from states are allocated.</li>
   </ol>
 </body>
 </html>
