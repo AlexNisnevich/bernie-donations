@@ -34,7 +34,7 @@
 
   <p>Neither is an easy question to answer. The path that political contributions take is a <a href="http://www.propublica.org/special/a-tangled-web">complicated one</a>. But we can assume that, aside from administrative costs, the main expense for the Sanders campaign will be advertising, and TV advertising in particular.</p>
 
-  <p>The goal of campaign advertising is to sway potential voters. Let's try to estimate how cost-effective political ads are at doing that. Two factors are at play when we think about the impact of an ad - the number of voters that the ad reaches and what fraction of them change their minds as a result:</p>
+  <p>The goal of campaign advertising is to sway potential voters. As a little thought experiment, let's try to estimate how cost-effective political ads are at doing that. Two factors are at play when we think about the impact of a given ad – the number of voters that the ad reaches and what fraction of them change their minds as a result:</p>
 
   <p class="eqn">ad impact = (# voters reached) × (% minds changed)</p>
 
@@ -44,15 +44,15 @@
 
   <p class="eqn">(# voters reached /$) = (1000 /CPM) × (% Democratic primary turnout)</p>
 
-  <p>According to <em>Media Dynamics</em>, an advertising analyst firm, it seems that TV ads have about a CPM of $10 on average - that is, they reach a thousand viewers for every $10 spent:</p>
+  <p>According to <em>Media Dynamics</em>, an advertising analyst firm, it seems that TV ads have about a CPM of $10 on average – that is, they reach a thousand viewers for every $10 spent:</p>
 
   <p class="img">
     <img src="images/cpm-for-internet-video-and-tv-commercials.jpg" width="50%" />
   </p>
 
-  <p>And voter turnout in the last presidential primaries in 2012 was <a href="http://bipartisanpolicy.org/library/national-primary-turnout-hits-new-record-low/">an abysmal 17.3%</a>, so we can estimate about half of that - say, 8.6% - for Democratic primary turnout specifically [let's ignore potential Republican voters who could support Bernie].</p>
+  <p>And voter turnout in the last presidential primaries in 2012 was <a href="http://bipartisanpolicy.org/library/national-primary-turnout-hits-new-record-low/">an abysmal 17.3%</a>, so we can estimate about half of that – say, 8.6% – for Democratic primary turnout specifically [let's ignore potential Republican voters who could support Bernie].</p>
 
-  <p>But surely there is some targeting going on with political ads - for example, you wouldn't air an ad during a show whose primary demographic is children or teens. So let's add a small multiplier of ×1.5 to reflect the fact that the viewers of these ads are <em>slightly</em> more likely than the average TV American to be voters.</p>
+  <p>But surely there is some targeting going on with political ads – for example, you wouldn't air an ad during a show whose primary demographic is children or teens. So let's add a small multiplier of ×1.5 to reflect the fact that the viewers of these ads are <em>slightly</em> more likely than the average TV American to be voters.</p>
 
   <p>With this in mind, we can estimate the cost to reach each voter:</p>
 
@@ -62,9 +62,21 @@
 
   <p>An average voter has just seen an ad for Bernie Sanders. What impact will this ad have?</p>
 
-  <p>While this is a popular topic of study[footnote here?], I couldn't find many hard numbers aside from those in Franz and Ridout's 2007 paper <a href="http://www.bowdoin.edu/~mfranz/final_published_FranzRidout.pdf">Does Political Advertising Persuade?</a>. Franz and Ridout try out a few different models to explain how voter behavior is affected by advertising, and the ...</p>
+  <p>While this is a popular topic of study[footnote here?], I couldn't find many hard numbers aside from those in Franz and Ridout's 2007 paper <em><a href="http://www.bowdoin.edu/~mfranz/final_published_FranzRidout.pdf">Does Political Advertising Persuade?</a></em> . Franz and Ridout try out a few different models to explain how voter behavior is affected by advertising, and the model that fits their experimental data best seems to suggest the following:</p>
 
-  <p class="eqn">% minds changed = (50 % medium-information voters) × (10 % avg change) × ½ = <strong>2.5 %</strong></p>
+  <p><em>“High-information voters”</em> (≈ 25% of the study) are not statistically affected by advertisements, and the effects on <em>“low-information voters”</em> (≈ 25%) are unpredictable. <em>“Medium-information voters”</em> (≈ 50%), however, have a statistically significant change in perception after exposure to ads, averaging out to a shift of 1 point along the x-axis of the logistic function:</p>
+
+  <p class="img"><img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Logistic-curve.svg" width="40%" /></p>
+
+  <p>In other words, a “medium-information voter” who had a 50% chance <em>(x=0)</em> of supporting a candidate would, on average, have about a 65% chance <em>(x=1)</em> of supporting that candidate right after seeing an ad for them.</p>
+
+  <p>Without bringing too much math into this [and without knowing the <em>a priori</em> distribution of voter preferences], it seems reasonable to conclude that the average change of a medium-information voter's preference after seeing an ad is around 10%. But Franz and Ridout's study was specifically about general elections, in which voters are much more engaged than in primaries, so let's cut our estimate in half down to 5% to account for that.</p>
+
+  <p>So here's the simplified model we'll work with: 50% of voters (the medium-information voters) can have their views affected by TV advertising. Among them, exposure to a pre-Bernie TV ad will on average make each voter 5% more likely to vote for him:</p>
+
+  <p class="eqn">% minds changed = (50 % medium-information voters) × (5 % avg change) = <strong>2.5 %</strong></p>
+
+  <h2>Dollars and Votes</h2>
 
   <p>Putting it all together, we can finally get a (hugely simplified) approximation of the impact of each dollar spent on Bernie Sanders campaign ads:</p>
 
@@ -72,9 +84,7 @@
 
   <p>or roughly <strong>1 extra vote per $3</strong> spent on advertising.</p>
 
-  <h2>Dollars and Votes</h2>
-
-  <p>blah blah blah interactive graphic (footnote with data sources and caveats)</p>
+  <p>To illustrate this, [...]</p>
 
   <div id="mapArea">
     <div id="map"></div>
@@ -87,7 +97,7 @@
     </div>
   </div>
 
-  <p>[[blah blah blah $20m to be competitive (but doesn't take into account Hillary spending - let's assume - completely arbitrarily - that 1 in 3 people convinced by Bernie are convinced for good, regardless of other ads. So we can multiply the number by 3 to ignore Hillary spending) Also assume 25% of donations are used for logistics, so total money needed is $20m * 3 / 0.75 = <strong>80m</strong>]]</p>
+  <p>[[blah blah blah $20m to be competitive (but doesn't take into account Hillary spending – let's assume – completely arbitrarily – that 1 in 3 people convinced by Bernie are convinced for good, regardless of other ads. So we can multiply the number by 3 to ignore Hillary spending) Also assume 25% of donations are used for logistics, so total money needed is $20m * 3 / 0.75 = <strong>80m</strong>]]</p>
 
   <p>blah blah blah donate</p>
 </body>
