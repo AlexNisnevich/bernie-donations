@@ -23,6 +23,8 @@ var currentTooltipStateCode;
 $(document).ready(function () {
   $('body').flowtype();
 
+  $('#footnotes').footnotes();
+
   $('#reset').click(function () {
     deltas = $.extend({}, data.deltas);
     totalSpent = 0;
